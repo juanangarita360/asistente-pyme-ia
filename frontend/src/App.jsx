@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
-const API_URL = "http://127.0.0.1:5000/preguntar";
+const API_URL = "https://asistente-pyme-ia.onrender.com/api/chat";
 
 const SUGERENCIAS = [
   "¿Cuánto tiempo tengo para devolver una prenda?",
