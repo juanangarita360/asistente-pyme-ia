@@ -62,4 +62,7 @@ def endpoint_preguntar():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    # Lee el puerto dinámico asignado por el servidor o usa el 5000 por defecto en local
+    port = int(os.environ.get("PORT", 5000))
+    # '0.0.0.0' expone la API para que pueda ser consumida externamente (como por tu frontend en Vite)
+    app.run(host="0.0.0.0", port=port, debug=False)
